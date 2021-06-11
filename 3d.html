@@ -49,7 +49,7 @@ function main() {
   scene.background = new THREE.Color('black');
 
   {
-    const planeSize = 1;
+    const planeSize = 5;
 
     const loader = new THREE.TextureLoader();
     const texture = loader.load('https://threejsfundamentals.org/threejs/resources/images/checker.png');
@@ -89,7 +89,7 @@ function main() {
 
   {
     const objLoader = new OBJLoader();
-    objLoader.load('windmill.obj', (root) => {
+    objLoader.load('https://raw.githubusercontent.com/cureofdeath/todo/main/walle.obj', (root) => {
       scene.add(root);
     });
   }
