@@ -23,9 +23,9 @@ html, body {
   </body>
 
   <script type="module">
-// Three.js - Load .OBJ ?
+// Three.js - Load .OBJ
 // from https://threejsfundamentals.org/threejs/threejs-load-obj-no-materials.html
-
+// LAOD ALL FILES FROM FILLOWING LINKS
 import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/build/three.module.js';
 import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/examples/jsm/controls/OrbitControls.js';
 import {OBJLoader} from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/examples/jsm/loaders/OBJLoader.js';
@@ -40,7 +40,7 @@ function main() {
   const far = 100;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.set(0, 10, 20);
-
+//SET CAMERA VIEW FOR BEST RENDER IMAGE VIEW
   const controls = new OrbitControls(camera, canvas);
   controls.target.set(0, 5, 0);
   controls.update();
