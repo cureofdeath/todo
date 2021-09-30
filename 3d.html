@@ -19,9 +19,7 @@ html, body {
   </head>
   <body>
 <canvas id="c"></canvas>
-  
   </body>
-
   <script type="module">
 // Three.js - Load .OBJ
 // from https://threejsfundamentals.org/threejs/threejs-load-obj-no-materials.html
@@ -29,11 +27,9 @@ html, body {
 import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/build/three.module.js';
 import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/examples/jsm/controls/OrbitControls.js';
 import {OBJLoader} from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/examples/jsm/loaders/OBJLoader.js';
-
 function main() {
   const canvas = document.querySelector('#c');
   const renderer = new THREE.WebGLRenderer({canvas});
-
   const fov = 45;
   const aspect = 2;  // the canvas default
   const near = 0.1;
@@ -44,10 +40,8 @@ function main() {
   const controls = new OrbitControls(camera, canvas);
   controls.target.set(0, 5, 0);
   controls.update();
-
   const scene = new THREE.Scene();
   scene.background = new THREE.Color('black');
-
   {
     const planeSize = 5;
 
